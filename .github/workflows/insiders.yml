@@ -82,7 +82,7 @@ jobs:
 
       - name: Push changes
         run: |
-          git push origin ${{ env.UPDATE_BRANCH }} --force-with-lease
+          git push origin ${{ env.UPDATE_BRANCH }} --f
 
       - name: Write upstream parent commit to file
         if: ${{ success() }}
